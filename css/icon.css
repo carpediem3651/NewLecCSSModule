@@ -69,6 +69,37 @@
     background-color: var(--color-accent-1);
 }
 
+/* 아이콘 알람 */
+.icon-count-with {
+    /* relative 부모를 기준으로 기준점이 결정된다. */
+    position: relative;
+}
+
+.icon-count {
+    
+    /* 위치 */
+    /* 문서를 기준으로 기준점이 결정된다 */
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    /* font style */
+    font-size: 12px;
+
+    /* 박스 style */
+    background-color: red;
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    /* 박스안의 개별 요소를 적용할 떄는 inline을 사용 */
+    display: inline-flex;
+    /* 세로 */
+    align-items: center;
+    /* 가로 */
+    justify-content: center;
+    
+}
+
 /* 아이콘 유틸리티화 */
 .icon-settings::before {
     /* background-color: red; */
