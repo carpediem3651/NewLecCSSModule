@@ -1,0 +1,22 @@
+
+.unique-menu {
+    
+}
+
+.unique-menu
+    .card {
+        background-color: red;
+    }
+
+.unique-menu
+    .card
+        h1{
+            background-color: blue;
+        }
+
+@media (max-width:700px){
+    .md\:card-size{
+        width:370px;
+        height:588px;
+    }
+}

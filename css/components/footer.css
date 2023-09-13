@@ -2,6 +2,10 @@
     /* 랩핑을 먼저하고 정렬한다. 정렬을 하기 위해선 여백이 있어야한다. */
     display: flex;
     justify-content: center;
+
+    color: var(--color-base-0);
+    background-color: var(--color-base-9);
+    padding: var(--gap-5);
 }
     .footer dl {
         display: grid;
