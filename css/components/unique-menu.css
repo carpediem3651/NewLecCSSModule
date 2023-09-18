@@ -1,34 +1,13 @@
 .unique-menu
     .card{
         width: 300px;
+        margin-bottom: 68px;
         display: flex;
         flex-direction: column;
-        color: #f2f2f2;
-    }
-
-.unique-menu 
-    .left-card {
-        align-items: start;
-        text-align: left;
-    }
-.unique-menu 
-    .center-card {
-        align-items: center;
-        text-align: center;
-    }
-    
-.unique-menu
-    .right-card{
-        align-items: end;
-        text-align: right;
+        color: var(--color-base-0);
     }
 
 
-.unique-menu
-    .title{
-        color: #f1f1f1;
-    }
-        
 .unique-menu
     .card
         h1{
@@ -36,47 +15,54 @@
             height: 66px;
             font-size: 24px;
             font-weight: bold;
-            line-height: 32px;
+            line-height: 32.69px;
             margin: 0;
         }
 .unique-menu
     .card
+        div{
+            /* width: 240px; */
+            height: 180px;        
+        }
+.unique-menu
+    .card
+        img{            
+            width: inherit;
+            height: inherit;
+        }
+.unique-menu
+    .card
         p{
+            /* font-size: 14px; */
+            font-weight: 400;            
             width: 300px;
             height: 42px;
-            font-weight: 400;
             line-height: 21px;
             margin-top: 8px;
             margin-bottom: 24px;
         }
+
+
+
+/* ------ .unique-menu status ---------------- */
+.unique-menu 
+    .left-card {
+            align-items: left;
+            text-align: left;
+        }
         
-.unique-menu
-    .card
-        div{
-            /* width: 240px; */
-            height: 180px;
+.unique-menu 
+    .center-card {
+            align-items: center;
+            text-align: center;
         }
-
+            
 .unique-menu
-    .card
-        img{
-            width: inherit;
-            height: inherit;
+        .right-card{
+            align-items: end;
+            text-align: right;
         }
-
-.unique-menu
-    .center-card
-        p{
-        order: 2;
-        margin: 0;
-        }
-.unique-menu
-    .center-card
-        div{
-        order: 1;
-        margin: 24px 0;
-        }
-
+/* ------/ .unique-menu status ---------------- */
 
 .unique-menu
     .card
@@ -89,32 +75,98 @@
             color: #d48700;
         }
 .unique-menu
-    .card
-        .roasting{
-            color: #944813;
+        .card
+            .roasting{
+                color: #944813;
+            }
+
+
+@media (min-width: 700px){
+    .unique-menu
+        .md\:card{
+            width: 370px;
+            height: 588px;
+            background-color: var(--color-base-0);
+            color:inherit;
+
+            align-items: center;
         }
 
+    .unique-menu
+        .md\:card::before{
+            content: "";
+            display: inline-block;
+            width: 40px;
+            height: 3px;
+            background-color: var(--color-base-9);
+            margin-top: 40px;
+        }
 
-/* ---- cards layout ---------------------- */
+    .unique-menu
+        .md\:card
+            h1{
+                text-align: center;
+                margin-top: var(--gap-4);
+            }
+
+    .unique-menu
+        .md\:card
+            p{
+                margin-top: var(--gap-4);
+                font-size: var(--font-size-4);
+                width: 290;
+                text-align: center;
+            }
+
+    .unique-menu
+        .md\:card
+            div{
+                width: inherit;
+                height: 305px;
+                order:-1;   
+            }
+
+}
+
+/* ======================================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---- cards layout ------------------------------------ */
+
 .unique-menu{
     background-color:#181614;
-    padding: 68px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .unique-menu
-    .list{
-        gap: 68px;
-    }
-
-.unique-menu
     .title{
-        display: none;
+        color: var(--color-base-1);
+        font-size: 36px;
+        font-weight: bold;
     }
 
 .unique-menu
     .list{
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 
 .unique-menu
@@ -127,170 +179,18 @@
         .center-card{
             align-self: center;
         }
+
 .unique-menu
     .list
         .right-card{
             align-self: flex-end;
         }
 
-
 @media (min-width: 700px){
-    .md\:unique-menu{
-        background-color: #251404;
+.unique-menu
+    .list{        
+        flex-direction: row;
+        width: 1200px;
+        justify-content: space-between;
     }
-
-    .md\:unique-menu
-        .md\:card{
-            width: 370px;
-            height: 588px;
-            align-items: center;
-            text-align: center;
-            background-color: #f2f3f4;
-            color: #383a35;
-        }
-
-    .unique-menu
-        .md\:card
-            h1{
-                width: 290px;
-                font-weight: bold;
-                margin-top: 59px;
-            }
-    .unique-menu
-        .md\:card
-            p{
-                width: 290px;
-                margin-top: 16px;
-                font-size: 16px;
-            }
-
-    .unique-menu
-        .md\:card
-            div{
-                width: 370px;
-                height: 305px;
-                order: -1;
-            }
-    .unique-menu
-        .center-card
-            div{
-                margin: 0;
-            }
-
-    .unique-menu
-        .md\:card
-            img{
-                width: inherit;
-                height: inherit;
-            }
-    .unique-menu
-        .list
-            h1::before{
-                content: "";
-                width: 40px;
-                height: 3px;
-                background-color: #383A35;
-                display: block;
-                margin: auto;
-                transform: translate(0px, -16px);
-            }
-
-    /* .md\:unique-menu
-        .title{
-            width: 1200px;
-            height: 74px;
-            display: flex;
-            flex-direction: column;
-            margin-top: 135px;
-            margin-bottom: 80px;
-            align-items: center;
-            font-size: 36px;
-            font-weight: 700;
-            line-height: 49px;
-        }
-
-    .md\:unique-menu
-        .title::after{
-            content: "";
-            
-            width: 100px;
-            height: 5px;
-            background-color: #FFFFFF;
-            transform: translate(0px, 16px);
-    }
-
-    .md\:unique-menu
-        .list
-            h1::before{
-            content: "";
-
-            width: 40px;
-            height: 3px;
-            background-color: #383A35;
-            display: block;
-            margin: auto;
-            transform: translate(0px, -16px);
-    }
-
-
-
-    .md\:unique-menu
-        .card{
-            width: 370px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            background-color: #f2f3f4;
-            color: #383a35;
-        }
-
-    .md\:unique-menu
-        .card
-            h1{
-            order: 2;
-            width: 290px;
-            height: 100%;
-            margin-top: 59px;
-            }
-
-    .md\:unique-menu
-        .card
-            p{
-            order: 3;
-            width: 290px;
-            margin-top: 16px;
-            margin-bottom: 70px;
-            }
-    .md\:unique-menu
-        .card
-            div{
-            order: 1;
-            margin: 0;
-            }
-    .md\:unique-menu
-        .card
-            img{
-            width: 370px;
-            height: 305px;
-            } */
-
-    /* ---- cards layout ---------------- */
-    /* .md\:unique-menu{
-        background-color: #251404;
-        margin: 0;
-        padding: 0 0 60px 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-    .md\:unique-menu
-        .list{
-            display: flex;
-            flex-direction: row;
-            gap: 45px;
-        }*/
-    }
-        
+}
