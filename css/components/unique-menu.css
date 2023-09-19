@@ -1,3 +1,11 @@
+/* 개별요소 */
+.unique-menu
+    .title{
+        color: var(--color-base-1);
+        font-size: 36px;
+        font-weight: bold;
+    }
+
 .unique-menu
     .card{
         width: 300px;
@@ -62,8 +70,6 @@
             align-items: end;
             text-align: right;
         }
-/* ------/ .unique-menu status ---------------- */
-
 .unique-menu
     .card
         .fruit{
@@ -125,25 +131,10 @@
                 height: 305px;
                 order:-1;   
             }
-
 }
 
+
 /* ======================================================= */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ---- cards layout ------------------------------------ */
@@ -154,13 +145,6 @@
     flex-direction: column;
     align-items: center;
 }
-
-.unique-menu
-    .title{
-        color: var(--color-base-1);
-        font-size: 36px;
-        font-weight: bold;
-    }
 
 .unique-menu
     .list{
@@ -193,4 +177,12 @@
         width: 1200px;
         justify-content: space-between;
     }
+.unique-menu::before {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 3px;
+    background-color: var(--color-base-0);
+    order: 1;
+}
 }
