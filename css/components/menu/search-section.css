@@ -1,0 +1,42 @@
+.search-section {
+    width: 360px;
+    height: 180px;
+
+    background-color: rgba(30,30,30,0.7);
+    background-image: url(/image/menu/coffee.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}
+
+.search-section
+    h1 {
+        color: var(--color-base-2);
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+
+        margin-top: var(--gap-6);
+
+    }
+
+/* ================ category-search ==================== */
+.category-search {
+
+}
+
+.category-search
+    .all {
+        /* font */
+        font-size: var(--font-size-2-1);
+        font-weight: bold;
+        padding: 4px 12px;
+
+        /* box */
+        width: 69px;
+        height: 24px;
+        box-sizing: border-box;
+        background-color: var(--color-base-0);
+        border-radius: var(--radius-0);
+    }
+
