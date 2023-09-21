@@ -14,19 +14,40 @@
     background-color: transparent;
 }
 
-/* 자식 아이콘 공통 */
 .icon::before {
     content: '';
     display: inline-block;
     width: inherit;
     height: inherit;
+    background-size:inherit;
     /* background-image: url(/image/icon/settings.svg); */
-    /* background-size:inherit; */
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     -webkit-mask-size: inherit;
     mask-size: inherit;
     background-color: var(--color-base-9);
+}
+
+/* decoration */
+.deco {
+    /* 아이콘과 텍스트를 콘텐츠 크기로 감싼다 */
+    display: inline-flex;
+}
+
+.deco::before {
+    content: '';
+    display: inline-block;
+    width: var(--icon-size-1);
+    height: var(--icon-size-1);
+    /* background-image: url(/image/icon/settings.svg); */
+    background-size:inherit;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: inherit;
+    mask-size: inherit;
+    background-color: var(--color-base-10);
+    /* 아이콘과 텍스트 사이를 띄운다. */
+    margin-right: 6px;
 }
 
 /* hover 유틸리티 */
@@ -143,7 +164,21 @@
     mask-image: url(/image/icon/sign-out.svg);
 }
 
+.icon-filter_list::before {
+    -webkit-mask-image:url(/image/icon/filter_list.svg);
+    mask-image: url(/image/icon/filter_list.svg);
+
+    /* 마스크 아이콘 위치 조절 */
+    -webkit-mask-position: center -3px;
+    mask-position: center -3px;
+}
+
 @media (min-width:700px){
+
+    .md\:deco::before {
+        display: none;
+    }
+
     .md\:icon-size\:1{
         width:var(--icon-size-1);
         height:var(--icon-size-1);
