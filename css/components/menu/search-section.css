@@ -24,7 +24,22 @@
 /* ================ category-search ==================== */
 .category-search {
 
+   color: #fff;
 }
+
+.category-search
+    ul {
+        display: flex;
+        justify-content: center;
+        margin-top: 22px;
+    }
+
+    .category-search
+        ul
+            li {
+                margin-left: 30px;
+            }
+
 
 .category-search
     .all {
