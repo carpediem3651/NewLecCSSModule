@@ -1,0 +1,55 @@
+/* decoration */
+.deco {
+    /* 아이콘과 텍스트를 콘텐츠 크기로 감싼다 */
+    display: inline-flex;
+}
+
+.deco::before {
+    content: '';
+    display: inline-block;
+    width: var(--icon-size-1);
+    height: var(--icon-size-1);
+    /* background-image: url(/image/icon/settings.svg); */
+    background-size:inherit;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: inherit;
+    mask-size: inherit;
+    background-color: var(--color-base-10);
+    /* 아이콘과 텍스트 사이를 띄운다. */
+    margin-right: 6px;
+
+    /* 사이즈 */
+        width: var(--icon-size-1);
+    height: var(--icon-size-1);
+    background-size: var(--icon-size-1);
+}
+
+/* deco사이즈 유틸리티화 */
+.deco-icon-size\:1::before {
+    width: var(--icon-size-1);
+    height: var(--icon-size-1);
+    background-size: var(--icon-size-1);
+}
+
+.deco-icon-size\:2::before {
+    width: var(--icon-size-2);
+    height: var(--icon-size-2);
+    background-size: var(--icon-size-2);
+}
+
+.deco-icon-size\:3::before {
+    width: var(--icon-size-3);
+    height: var(--icon-size-3);
+    /* background-size: var(--icon-size-3); */
+    -webkit-mask-size: var(--icon-size-3);
+    mask-size: var(--icon-size-3);
+}
+
+
+@media (min-width:700px){
+
+    .md\:deco::before {
+        display: none;
+    }
+}
