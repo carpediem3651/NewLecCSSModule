@@ -4,6 +4,7 @@
     display: grid;
     grid-template-columns: 80px 1fr 60px;
     grid-template-rows: 20px 20px 1fr 30px; 
+    column-gap: var(--padding-1);
 }
 
 /* 1단 */
@@ -38,3 +39,25 @@
         grid-column: 2;
         grid-row: 2;
     }
+.menu-card
+    .price-block {
+        grid-column: 2;
+        grid-row: 4;
+    }
+/* 3단 */
+.menu-card
+    .like-block {
+        grid-column: 3;
+        grid-row: 1;
+    }
+.menu-card
+    .pay-block {
+        grid-column: 3;
+        grid-row: 4;
+    }
+
+@media (min-width: 700px) {
+    .menu-card {
+
+    }
+}
