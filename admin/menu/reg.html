@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main layout:fragment="main">
+		<section>
+			<h1>등록폼</h1>
+			<form>
+                <section>
+                    <h1>메뉴등록 폼</h1>
+                    <form>
+                       <fieldset>
+                          <legend>메뉴정보</legend>
+                          <label>이미지</label>
+                          <input type="file">
+                          <label>카테고리</label>
+                          <select>
+                             <option>커피</option>
+                             <option>수제청</option>
+                             <option>쿠키</option>
+                          </select>
+                          <label>한글이름</label>
+                          <input type="text">
+                          <label>영문이름</label>
+                          <input type="text">
+                          <label>가격</label>
+                          <input type="text">
+                          <label>설명</label>
+                          <input type="text">               
+                       </fieldset>
+                       <fieldset>
+                          <legend>메뉴 크기 옵션</legend>
+                          <label><input type="radio">Small</label>
+                          <label><input type="radio">Large</label>
+                       </fieldset>      
+                       <div>
+                          <a href="list">취소</a>
+                          <input type="submit" value="저장">
+                       </div>      
+                    </form>
+                 </section>
+           
+                <!-- ============== 내가 쓴 코드 ============ -->
+				<!-- <select>
+					<option>커피</option>
+				</select>
+                <input type="text" placeholder="카페 라떼">
+                <input type="text" placeholder="Cafe Latte">
+                <input type="text" placeholder="4,500">
+                <textarea name="opinion" cols="30" rows="5"></textarea>
+                <section>
+                    <h1>기본 크기 선택</h1>
+                    <button>Large</button><button>ICED</button>
+                </section>
+                <input type="submit" placeholder="저장">
+                <button>취소</button> -->
+			</form>
+		</section>
+	</main>
+</body>
+</html>

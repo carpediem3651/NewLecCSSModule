@@ -10,7 +10,10 @@
     <link href="/css/reset.css" rel="stylesheet" type="text/css">
     <link href="/css/root.css" rel="stylesheet" type="text/css">
     <link href="/css/style.css" rel="stylesheet" type="text/css">
-    <link href="/css/util.css" rel="stylesheet" type="text/css">
+    <link href="/css/util/box.css" rel="stylesheet" type="text/css">
+    <link href="/css/util/form.css" rel="stylesheet" type="text/css">
+    <link href="/css/util/content.css" rel="stylesheet" type="text/css">
+    <link href="/css/util/layout.css" rel="stylesheet" type="text/css">
     <link href="/css/heading.css" rel="stylesheet" type="text/css">
     <link href="/css/icon.css" rel="stylesheet" type="text/css">
     <link href="/css/button.css" rel="stylesheet" type="text/css">
@@ -21,16 +24,16 @@
       <h1>
          <a class="heading-3" href="detail?id=1">카페라떼</a></h1>
       <h2 class="heading-2 font-weight:normal color:base-5">Cafe Latte</h2>
-      <div class="price-block">4,500원<span>SOLD OUT</span></div>
+      <div class="price-block d:flex"><span class="font-weight:bold">4,500</span>원<span class="ml:auto mr:auto">SOLD OUT</span></div>
       <div class="img-block">
          <a href=""><img src="/image/menu/coffee.jpg"></a>
       </div>
-      <div class="like-block d:flex">
+      <div class="like-block">
          <a class="icon icon-heart" href="">좋아요</a><span class="ml:1">2</span>
       </div>
       <div class="pay-block d:flex">
-         <a class="icon icon-cart" href="">장바구니</a>
-         <a class="icon icon-cart" href="">결제하기</a>
+         <a class="icon icon-cart icon-color:base-0 md:btn bg-color:main-3 btn-type:icon" href="">장바구니</a>
+         <a class="icon icon-card icon-color:base-0 md:btn bg-color:accent-1 btn-type:icon" href="">결제하기</a>
       </div>
    </section>
 </body>

@@ -26,8 +26,10 @@
     border-radius: var(--radius-3);
 }
 
-.btn-icon {
-    padding: 0;
+.btn-type\:icon {
+    padding: 7px;
+    box-sizing: content-box;
+    border-radius: 50%
 }
 
 /* 비활성화 버튼 */

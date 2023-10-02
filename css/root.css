@@ -20,13 +20,17 @@
     --color-base-13: #000000;
 
     /* main color */
-    --color-main-1: #0094FF;
-    --color-main-2: #00B2FF;  
+    --color-main-1: #D86259;
+    --color-main-2: #905634;
+    --color-main-3: #5E2808;
+    --color-main-4: #251404;
 
+    --color-primary-1:#000;
+
+    --color-secondary-1:#000;
 
     /* accent color */
-    --color-accent-3: #ED5858;
-    --color-accnet-4: #F69625;
+    --color-accent-1: #334DcF;
 
     /* font size */
     --font-size-1: 8px;
@@ -37,15 +41,14 @@
     --font-size-5: 18px;
     
     /* radius size */
-    --radius-0: 4px; 
     --radius-1: 8px; 
     --radius-2: 12px;
     --radius-3: 10px; 
     --radius-4: 15px; 
 
-    --icon-size-1: 20px;
-    --icon-size-2: 24px;
-    --icon-size-3: 36px;
+    --icon-size-1: 16px;
+    --icon-size-2: 20px;
+    --icon-size-3: 24px;
 
     --gap-1:5px;
     --gap-2:8px;

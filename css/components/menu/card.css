@@ -49,6 +49,9 @@
     .like-block {
         grid-column: 3;
         grid-row: 1;
+
+        display: flex;
+        justify-content: flex-end;
     }
 .menu-card
     .pay-block {
