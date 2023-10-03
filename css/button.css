@@ -42,6 +42,73 @@
 
 }
 
+/* ================셀렉트 박스 ================*/
+/* 기본설정 */
+body{
+    display: flex;
+    align-items: center;
+}
+
+.select-box {
+    font-size: 1rem;
+    /* 윗,오른쪽,아래,왼쪽 */
+    padding:1em 6em 1em 1em;
+    background: var(--color-main-1);
+    color: var(--color-base-0);
+
+    /* 기존 select스타일링 없앰 */
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.select {
+    position: relative;
+}
+
+.custom-arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    background-color: red;
+    height: 100%;
+    width: 4em;
+    /* 빨간색 네모를 뚫고 셀렉터를 클릭하기 위함 */
+    pointer-events: none;
+}
+
+.custom-arrow::before,
+.custom-arrow::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    
+    /* 두 개 삼각형(함꼐) 위치 조정 */
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,300%);
+}
+
+/* 삼각형 만들기 */
+.custom-arrow::before {
+    border-left: 0.5em solid transparent;
+    border-right: 0.5em solid transparent;
+    border-top: 0.5em solid white;
+
+    /* 개별 삼각형 위치 조정 */
+    top: 20%;
+}
+
+.custom-arrow::after {
+    border-left: 0.5em solid transparent;
+    border-right: 0.5em solid transparent;
+    border-bottom: 0.5em solid white;
+
+    /* 개별 삼각형 위치조정 */
+    top: 0%;
+}
+
 /* 하나 만들 때 마다 미디어쿼리 적용해야한다. */
 @media (min-width: 700px) {
     /* 변화되는 버튼이면 md */
